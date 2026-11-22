@@ -1,0 +1,177 @@
+# ── Category definitions ──────────────────────────────────────────────
+# Each category has:
+#   label     = display name
+#   keywords  = list of regex patterns (case-insensitive, matched against
+#              screen_name + name + bio)
+#   color     = badge color in HTML output
+
+[[categories]]
+label = "🪙 Crypto / Web3"
+color = "#f7931a"
+keywords = [
+    "(?i)bitcoin|btc|crypto|web3|blockchain|defi|ethereum|eth\\b|solidity",
+    "(?i)solana\\b|sol\\b|polygon|matic|avalanche|avax\\b|arbitrum|optimism",
+    "(?i)hodl|wagmi|gm\\s+gn|degen|nfa|dyor|wen\\s+",
+    "(?i)vitalik|saylor|cz_binance|coinbase",
+    "(?i)\\bonchain?\\b|\\bon.chain\\b|decentrali[sz]ed|\\bdex\\b|\\bamm\\b|\\bdapp?\\b",
+    "(?i)\\blayer\\s*[12]\\b|\\bl[12]\\b.*chain|rollup|zk.?rollup|optimistic",
+    "(?i)\\bprotocol\\b.*\\bchain\\b|\\bchain\\b.*\\bprotocol\\b|infrastructure.*web3",
+    "(?i)\\bvalidators?\\b|\\bsequencer\\b|\\boracle\\b.*chain|\\bnode\\b.*operator",
+    "(?i)\\brpc\\b.*provider|\\bbridge\\b.*chain|cross.?chain|interoperab",
+    "(?i)\\becosystem\\b.*web3|web3.*\\becosystem\\b|\\becosystem\\b.*blockchain",
+    "(?i)\\blabs\\b.*crypto|\\blabs\\b.*blockchain|\\blabs\\b.*web3|\\blabs\\b.*defi",
+    "(?i)multichain|multi.?chain|\\brwa\\b.*yield|pow\\b.*l1|permissionless",
+    "(?i)\\bco.?founder\\b.*crypto|crypto.*\\bco.?founder\\b|\\bco.?founder\\b.*web3",
+    "(?i)building.*currency|agentic.*economy|digital.*cash.*private|\\bbet\\b.*\\bbanger\\b",
+]
+
+[[categories]]
+label = "🎭 Memecoin / Caller"
+color = "#ff6b6b"
+keywords = [
+    "(?i)memecoin|meme\\s*coin|shitcoin|degens?",
+    "(?i)\\bpepe\\b|\\bdoge\\b|\\bshib\\b|\\bwojak\\b|\\bbonk\\b|\\bwif\\b",
+    "(?i)\\bmog\\b|\\bpopcat\\b|\\bfloki\\b|\\bturbo\\b",
+    "(?i)caller|alpha\\s*call|gem\\s*call|100x|1000x|next\\s*moon",
+    "(?i)moonbag|moon\\s*bag|ape\\s*in|aped?\\s*in",
+    "(?i)launchpad.*meme|meme.*launchpad|\\bmemes\\b.*trade|trade.*\\bmemes\\b",
+]
+
+[[categories]]
+label = "🪂 Airdrop / Hunter"
+color = "#4ecdc4"
+keywords = [
+    "(?i)airdrop|airdrops|airdrop\\s*hunter|airdrop\\s*farmer",
+    "(?i)farming|retrodrop|sybil|testnet.*airdrop",
+    "(?i)\\bclaim\\b.*\\bairdrop\\b|\\bairdrop\\b.*\\bclaim\\b",
+    "(?i)airdrop.*thread|thread.*airdrop",
+    "(?i)zksync|starknet|layerzero|aptos|sei\\b|sui\\b",
+]
+
+[[categories]]
+label = "🔞 NSFW / Porn"
+color = "#e91e63"
+keywords = [
+    "(?i)onlyfans|only\\s*fans|nsfw|\\bporn\\b|\\bxxx\\b|adult|sexy",
+    "(?i)\\bnude\\b|\\bnaked\\b|\\bhot\\b.*\\bgirl\\b|\\bgirl\\b.*\\bhot\\b",
+    "(?i)milf|daddy|\\bbdsm\\b|\\bfetish\\b|cam\\s*girl|camgirl",
+    "(?i)18\\+|\\bOF\\b.*link|\\bOF\\b.*bio|fansly|justforfans",
+    # ── Indonesian NSFW ──
+    "(?i)\\bpasutri\\b|\\bswinger\\b|\\bswing\\b|\\bgangbang\\b|\\bgb\\b",
+    "(?i)\\balter\\b|\\bopen\\s*bo\\b|\\bcrot\\b|\\bmemek\\b|\\bkontol\\b",
+    "(?i)\\bcewe\\b.*sexy|\\bsange\\b|\\bcolmek\\b|\\bcroot\\b|\\bsepong\\b|\\bjilb0b\\b|\\bjilboobs\\b",
+    "(?i)\\btante\\b.*girang|\\bjanda\\b.*gatal|\\bbokep\\b|\\bvcs\\b|\\bvc.?an\\b",
+    "(?i)indonesia.*sexy|indo.*hot|jakarta.*escort|bali.*massage",
+    "(?i)ladies\\d|cewe\\d|cewek\\d|bispak|pecun|cabe.*cabean",
+    "(?i)\\bkebinalan\\b|\\bnakal\\b.*\\bliar\\b|sekolah.*kebinalan",
+    "(?i)\\bdirty\\b.*\\bacc\\b|\\bacc\\b.*\\bdirty\\b|\\bcouple\\b.*swing|swing.*\\bcouple\\b",
+    "(?i)\\bcuckold\\b|\\bcuck\\b|hotwife|\\b3some\\b|\\bthreesome\\b|\\b3s\\b.*\\bmf\\b",
+    "(?i)\\bsexual\\b|\\berotic\\b|\\btelanjang\\b|\\bbugil\\b|\\bngentot\\b|\\bsepong\\b",
+    "(?i)jav\\b|jav\\s*model|jav\\s*actress|japanese.*porn|asian.*porn",
+    "(?i)married.*couple.*fantasy|couple.*looking.*male|couple.*looking.*female",
+    "(?i)\\bpasangan\\b.*\\b3some\\b|\\bpasangan\\b.*swing|\\bistri\\b.*nakal|\\bsuami\\b.*nakal",
+    "(?i)\\bprivate\\b.*\\bkonten\\b|\\bkonten\\b.*\\bprivate\\b|\\bjajan\\b.*\\bpriv\\b|\\bpriv\\b.*\\bjajan\\b",
+    "(?i)contenido.*disponible|venta.*contenido|pedidos.*personalizados",
+    "(?i)\\bรับงาน\\b|\\bnัด\\b|\\bซัพพอต\\b|รับ.*โปรโมท",
+]
+
+[[categories]]
+label = "🎨 NFT"
+color = "#9b59b6"
+keywords = [
+    "(?i)\\bnft\\b|\\bnfts\\b|non\\s*fungible|\\bart\\b.*\\bcollector\\b",
+    "(?i)opensea|rarible|blur\\.io|magic\\s*eden",
+    "(?i)\\bpunk\\b|\\bape\\b.*club|\\bazuki\\b|\\bpudgy\\b",
+    "(?i)nft\\s*artist|nft\\s*collector|nft\\s*trader|nft\\s*community",
+]
+
+[[categories]]
+label = "💻 Dev / Tech"
+color = "#3498db"
+keywords = [
+    "(?i)developer|engineer|programmer|software|\\bcoder?\\b|\\bcoding\\b",
+    "(?i)full.?stack|front.?end|back.?end|devops|sys.?admin",
+    "(?i)rust\\s*lang|\\bgolang\\b|typescript|javascript|python|react",
+    "(?i)open.?source|github|linux|kernel|oss",
+    "(?i)\\bai\\b.*engineer|ml\\s*engineer|data\\s*scientist",
+    "(?i)\\bco.?founder\\b.*\\bengineer\\b|\\bengineer\\b.*\\bco.?founder\\b",
+]
+
+[[categories]]
+label = "📰 News / Media"
+color = "#2ecc71"
+keywords = [
+    "(?i)news|media|journalist|reporter|editor|press",
+    "(?i)breaking|headline|coverage|exclusive",
+    "(?i)coindesk|cointelegraph|the\\s*block|decrypt|watcher",
+]
+
+[[categories]]
+label = "🤖 Bot / Automated"
+color = "#95a5a6"
+keywords = [
+    "(?i)\\bbot\\b|\\bbots\\b|bot\\s*account|automated|auto.?follow",
+    "(?i)auto.?reply|auto.?post|scheduled\\s*tweets",
+]
+
+[[categories]]
+label = "🎮 Gaming"
+color = "#e67e22"
+keywords = [
+    "(?i)gaming|gamer|game\\s*dev|esports|twitch|streamer",
+    "(?i)playstation|xbox|nintendo|steam|valorant|minecraft",
+    "(?i)game.?fi|play.?to.?earn|p2e|axie|illuvium",
+]
+
+[[categories]]
+label = "📈 Trading / Finance"
+color = "#1abc9c"
+keywords = [
+    "(?i)trader|trading|forex|stock|invest|investor|finance|financial",
+    "(?i)\\bta\\b.*crypto|technical\\s*analysis|candlestick|chart",
+    "(?i)binance.*trader|day.?trader|swing.?trader|scalper|scalping",
+    "(?i)wealth|millionaire|billionaire|rich",
+    "(?i)\\bperps?\\b|\\bperp\\b.*trading|perpetual.*trading|perpetual.*dex",
+    "(?i)\\bspeculator\\b|\\bmarkets\\b.*crypto|crypto.*\\bmarkets\\b",
+    "(?i)macro.*trader|macro.*crypto|momentum.*trades|trading.*desk",
+    "(?i)head\\s*of\\s*.*trading|head\\s*of\\s*.*markets|head\\s*of\\s*.*perps",
+    "(?i)\\brwa\\b|real\\s*world\\s*asset|yield.*farming.*defi",
+]
+
+[[categories]]
+label = "🎵 Music / Entertainment"
+color = "#e74c3c"
+keywords = [
+    "(?i)musician|singer|rapper|producer|dj\\b|band\\b|songwriter",
+    "(?i)actor|actress|director|film|movie|hollywood|bollywood",
+    "(?i)spotify|soundcloud|apple\\s*music|youtube.*channel",
+]
+
+[[categories]]
+label = "🏛️ Government / Politics"
+color = "#34495e"
+keywords = [
+    "(?i)president|minister|senator|congress|parliament|government",
+    "(?i)politician|political|policy|diplomat|embassy|official",
+    "(?i)democrat|republican|conservative|liberal|progressive",
+]
+
+[[categories]]
+label = "🏀 Sports"
+color = "#27ae60"
+keywords = [
+    "(?i)football|soccer|basketball|baseball|nfl|nba|ufc|f1\\b",
+    "(?i)athlete|player|coach|stadium|championship|world\\s*cup",
+    "(?i)premier\\s*league|laliga|serie\\s*a|bundesliga",
+]
+
+[[categories]]
+label = "📚 Education / Science"
+color = "#8e44ad"
+keywords = [
+    "(?i)professor|researcher|scientist|phd|academic|university",
+    "(?i)physics|biology|chemistry|math|economics|philosophy|history",
+    "(?i)student|teacher|educator|learning|teaching",
+]
+
+# ── Uncategorized bucket (auto-generated) ──

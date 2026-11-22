@@ -1,0 +1,6 @@
+*.pyc
+__pycache__/
+.manual_progress.json
+following_*_sorted/
+following_*_sorted.html
+*.tar.gz
